@@ -138,7 +138,7 @@ h3 {
 
 .burger__menu {
     display:none;
-    background: url(/emikkkk-JSFEPRESCHOOL2023Q2/library/img/icons/icon-burger.svg) center no-repeat;
+    background: url(/library-rsschool-2023/library/img/icons/icon-burger.svg) center no-repeat;
     width: 45px;
     height: 21px;
     margin-left: 40px;
@@ -149,7 +149,7 @@ h3 {
     width: 32px;
     padding-left: 13px;
     height: 32px;
-    background: url(/emikkkk-JSFEPRESCHOOL2023Q2/library/img/icons/icon-burger-close.svg) center no-repeat;
+    background: url(/library-rsschool-2023/library/img/icons/icon-burger-close.svg) center no-repeat;
     margin-left: 40px;
     
 }
@@ -231,7 +231,7 @@ h3 {
 
 .main__container--background {
     height: 600px;
-    background: url(/emikkkk-JSFEPRESCHOOL2023Q2/library/img/content/header-background.png)  center no-repeat;
+    background: url(/library-rsschool-2023/library/img/content/header-background.png)  center no-repeat;
     
     margin: 0px -20px;
     
@@ -240,7 +240,7 @@ h3 {
 
 @media (min-width: 320px) and (max-width: 768px) {
     .main__container--background {
-        background: url(/emikkkk-JSFEPRESCHOOL2023Q2/library/img/content/header-background-tablet.jpg) center no-repeat;
+        background: url(/library-rsschool-2023/library/img/content/header-background-tablet.jpg) center no-repeat;
         margin: 0px -20px;
     }
 
@@ -383,7 +383,7 @@ margin: 0 auto;
         border: none;
         padding: 12px;
         display: block;
-        background: url(/emikkkk-JSFEPRESCHOOL2023Q2/library/img/icons/icon-gallery-arrow.svg) center no-repeat;
+        background: url(/library-rsschool-2023/library/img/icons/icon-gallery-arrow.svg) center no-repeat;
         cursor: pointer;
         
     }
