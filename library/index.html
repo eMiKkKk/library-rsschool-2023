@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brooklyn Public Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/emikkkk-JSFEPRESCHOOL2023Q2/library/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+    <header class="header__main"> 
+        <h1 class="header__logo">Brooklyn Public Library</h1>
+        <nav class="header__navigation ">
+            <ul class="navigation__list" id="nav.menu">
+                <li class="navigation__item">
+                    <a href="#about" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#favorites" class="navigation__link">Favorites</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#coffeeshop" class="navigation__link">Coffee shop</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contacts" class="navigation__link">Contacts</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#digitalcards" class="navigation__link">Library Card</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="navigation__link" id="login.btn">
+                <img src="img/icons/icon-profile.svg" width="28" height="28" alt="Иконка авторизации">
+        </a>
+        <a href="#" class="burger__menu" id="burger.btn"></a>
+        
+    </header> 
+    
+    <main class="main__page">
+        <section class="section__title" id="index">
+            <h2 class="hide">Brooklyn Library</h2>
+            <div class="main__container--background">
+                <div class="main__heading-wrapper">
+                <span class="main__heading">welcome <br> to the brooklyn <br> library</span>
+                </div>
+            </div>
+        </section>
+        <section class="section__about" id="about">
+            <div class="heading-container">
+                <h2 class="about__heading section__heading">About</h2>
+                <div class="heading--underline"></div>   
+            </div>
+            <p class="about__content">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
+            <div class="about__gallery carousel">
+                <ul class="carousel__list">
+                    <li class="carousel__item carousel__item--button">
+                        <button class="carousel__item--button"></button>
+                    </li>
+                    <li class="carousel__item"><img src="img/content/slide-1.jpg" width="450" height="560" alt="Изображение библиотеки 1"></li>
+                    <li class="carousel__item carousel__item--hide"><img src="img/content/slide-2.jpg" width="450" height="560" alt="Изображение библиотеки 2"></li>
+                    <li class="carousel__item carousel__item--hide"><img src="img/content/slide-3.jpg" width="450" height="560" alt="Изображение библиотеки 3"></li>
+                    <li class="carousel__item carousel__item--hide"><img src="img/content/slide-4.jpg" class="hide" width="450" height="560" alt="Изображение библиотеки 4"></li>
+                    <li class="carousel__item carousel__item--hide"><img src="img/content/slide-5.jpg" class="hide" width="450" height="560" alt="Изображение библиотеки 5"></li>
+                    <li class="carousel__item carousel__item--button reversed">
+                        <button class="carousel__item--button "></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="gallery__slider">
+                <div class="slider__container" ><button class="gallery__slider--figure slider--active"></button></div>
+                <div class="slider__container"><button class="gallery__slider--figure"></button></div>
+                <div class="slider__container"><button class="gallery__slider--figure"></button></div>
+                <div class="slider__container slider--hide "><button class="gallery__slider--figure"></button></div>
+                <div class="slider__container slider--hide "><button class="gallery__slider--figure"></button></div>
+            </div>
+        </section>
+        <section class="section__favorites" id="favorites">
+            <div class="heading-container">
+                <h2 class="favorites__heading section__heading">Favorites</h2>
+                <div class="heading--underline"></div>   
+            </div>
+            <form action="#" class="form__filter">
+                <p class="filter__title radio--active" >Pick    favorites of season</p>
+                <div class="label__container">
+                    <label for="filter-winter" class="filter__label radio--active">
+                        <input class="filter__input" type="radio" name="filter" id="filter-winter">Winter   
+                    </label>
+                    <label for="filter-spring" class="filter__label">
+                        <input class="filter__input" type="radio" name="filter" id="filter-spring">Spring  
+                    </label>
+                    <label for="filter-summer" class="filter__label">                                      
+                        <input class="filter__input" type="radio" name="filter" id="filter-summer">Summer
+                    </label>
+                    <label for="filter-autumn" class="filter__label">
+                        <input class="filter__input" type="radio" name="filter"  id="filter-autumn">Autumn
+                    </label>
+                </div>
+            </form>
+            <div class="favorites__card--container">
+                <ul class="card__list">
+                    <li class="card__item">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>the book eaters</dt>
+                                <dt>By Sunyi Dean</dt>
+                                <dd>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-13.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Cackle</dt>
+                                <dt> By Rachel Harrison</dt>
+                                <dd>Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-14.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Dante: Poet of the Secular World</dt>
+                                <dt>By Erich Auerbach</dt>
+                                <dd>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-15.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>The Last Queen</dt>
+                                <dt>By Clive Irving</dt>
+                                <dd>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</dd>
+                            </dl>
+                            <button class="card__button button card__button--own" disabled>Own</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-16.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>The Body</dt>
+                                <dt>By Stephen King</dt>
+                                <dd>Powerful novel that takes you back to a nostalgic time, exploring both the beauty and danger and loss of innocence that is youth.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-1.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Carry: A Memoir of Survival on Stolen Land</dt>
+                                <dt>By Toni Jenson</dt>
+                                <dd>This memoir about the author's relationship with gun violence feels both expansive and intimate, resulting in a lyrical indictment of the way things are.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-2.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Days of Distraction</dt>
+                                <dt>By Alexandra Chang</dt>
+                                <dd>A sardonic view of Silicon Valley culture, a meditation on race, and a journal of displacement and belonging, all in one form-defying package of spare prose.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-3.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Dominicana</dt>
+                                <dt>By Angie Cruz</dt>
+                                <dd>A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.</dd>
+                            </dl>
+                            <button class="card__button button card__button--own" disabled>Own</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-4.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Crude: A Memoir</dt>
+                                <dt>By Pablo Fajardo & ​Sophie Tardy-Joubert</dt>
+                                <dd>Drawing and color by Damien Roudeau | This book illustrates the struggles of a group of indigenous Ecuadoreans as they try to sue the ChevronTexaco company for damage their oil fields did to the Amazon and her people</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-5.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Let My People Go Surfing</dt>
+                                <dt>By Yvon Chouinard</dt>
+                                <dd>Chouinard—climber, businessman, environmentalist—shares tales of courage and persistence from his experience of founding and leading Patagonia, Inc. Full title: Let My People Go Surfing: The Education of a Reluctant Businessman, Including 10 More Years of Business Unusual.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-6.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>The Octopus Museum: Poems</dt>
+                                <dt>By Brenda Shaughnessy</dt>
+                                <dd>This collection of bold and scathingly beautiful feminist poems imagines what comes after our current age of environmental destruction, racism, sexism, and divisive politics.</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-7.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Shark Dialogues: A Novel</dt>
+                                <dt>By Kiana Davenport</dt>
+                                <dd>An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.</dd>
+                            </dl>
+                            <button class="card__button button card__button--own" disabled>Own</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-8.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Casual Conversation</dt>
+                                <dt>By Renia White</dt>
+                                <dd>White's impressive debut collection takes readers through and beyond the concepts of conversation and the casual - both what we say to each other and what we don't, examining the possibilities around how we construct and communicate identity. </dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-9.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>The Great Fire</dt>
+                                <dt>By Lou Ureneck</dt>
+                                <dd>The harrowing story of an ordinary American and a principled Naval officer who, horrified by the burning of Smyrna, led an extraordinary rescue effort that saved a quarter of a million refugees from the Armenian Genocide</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-10.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Rickey: The Life and Legend</dt>
+                                <dt>By Howard Bryant</dt>
+                                <dd>With the fall rolling around, one can't help but think of baseball's postseason coming up! And what better way to prepare for it than reading the biography of one of the game's all-time greatest performers, the Man of Steal, Rickey Henderson?</dd>
+                            </dl>
+                            <button class="card__button button">Buy</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-11.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                    <li class="card__item hide">
+                        <div class="card__wrapper">
+                            <div class="heading-container">
+                                <h3 class="card__staffpicks">Staff Picks</h3>
+                                <div class="staffpicks--underline"></div>
+                            </div>
+                            <dl class="card__content">
+                                <dt>Slug: And Other Stories</dt>
+                                <dt>By Megan Milks</dt>
+                                <dd>Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.</dd>
+                            </dl>
+                            <button class="card__button button card__button--own" disabled>Own</button>
+                        </div> 
+                        <div class="book__wrapper">
+                            <img src="img/content/catalog/book-12.jpg" width="200" height="300" alt="Изображение книги the book eaters ">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="section__coffeeshop" id="coffeeshop">
+            <div class="heading-container">
+                <h2 class="coffeeshop__heading section__heading">Coffee Shop</h2>
+                <div class="heading--underline"></div>   
+            </div>
+            <p class="coffeeshop__description">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+                You can get a favorite book and read in coffee shop. our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+            <div class="coffeeshop__menu-container">
+                <div class="coffeeshop__menu">
+                    <h3 class="coffeeshop__menu-title">Coffee & Tea</h3>
+                    <ul class="coffeeshop_list">
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Cold Brew Coffee</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$3</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">French Press Pot</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$5</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Espresso</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$2</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Cappuccino</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$4</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Hot Tea</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$2</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span  class="coffeeshop__item-title">Cold Tea</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$2</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="coffeeshop__menu coffeeshop--reversed">
+                    <h3 class="coffeeshop__menu-title">Desserts & Cakes </h3>
+                    <ul class="coffeeshop_list coffeeshop--reversed ">
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Forest Gateau</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$16</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Blue Moon</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$16</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Truffle Cake</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$15</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Chocolate Cake</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$18</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Poet’s Dream Cake</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$16</span>
+                        </li>
+                        <li class="coffeeshop__item">
+                            <span class="coffeeshop__item-title">Pineapple Cake</span>
+                            <div class="coffeeshop__item--underline"></div>
+                            <span class="coffeeshop__item-price">$14</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section__contacts" id="contacts">
+            <div class="heading-container">
+                <h2 class="contacts__heading section__heading">Our Contacts</h2>
+                <div class="heading--underline"></div>   
+            </div>
+            <div class="contacts__container">
+                <dl class="contacts__list">
+                    <dt>For All Library Inquiries:</dt>
+                    <dd>Please Call <a href="tel:6177302370">(617) 730-2370</a></dd>
+                    <dd>For TTY Service, Please Call <a href="tel:6177302370">(617) 730-2370</a></dd>
+                    <dd>Putterham Library: <a href="tel:6177302385">(617) 730-2385</a></dd>
+                    <dt>Senior Staff</dt>
+                    <dd>Library Director: <a href="mailto:AmandaHirst@gmail.com"><b>Amanda Hirst</b></a></dd>
+                </dl>
+                <img class="contacts__map" src="img/content/map.jpg"  alt="изображение адреса на карте">
+            </div>
+        </section>
+        <section class="section_digitalcards" id="digitalcards">
+            <div class="heading-container">
+                <h2 class="section__heading digital__heading">Digital Library Cards</h2>
+                <div class="heading--underline"></div>   
+            </div>
+            <div class="digitalcards__wrapper">
+                <div class="digitalcards__form-container">
+                    <h3 class="digitalcards__form-heading">Find your Library card</h3>
+                    <form action="#" class="digitalcards__form">
+                        <div class="input__wrapper">
+                            <span class="digitalcards__form-title">Brooklyn Public Library</span>
+                            <input type="text" placeholder="Reader's name">
+                            <input type="text" placeholder="Card number">
+                        </div>
+                        <button class="digitalcards__form-button button">Check the card</button>
+                    </form>
+                </div>
+                <div class="digitalcards__signup-container">
+                    <dl>
+                        <dt>Get a reader card</dt>
+                        <dd>You will be able to see a reader card after logging into account or you can register a new account</dd>
+                    </dl>
+                    <div class="signup__button-container">
+                        <button class="signup__button button">Sign Up</button>
+                        <button class="signup__button button">Log In</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>       
+    <footer class="page__footer">
+        <div class="social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <address><a href="https://goo.gl/maps/y4YkWjnRQzGeDQ2VA">286 Cadman Plaza, New York, <br> NY 11238, United States</a></address>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link link__twitter">
+                        <img src="img/icons/icon-twitter.svg" alt="логотип Twitter" width="24" height="24">
+                    </a>
+                    <a href="#" class="social__link link__twitter">
+                        <img src="img/icons/icon-instagram.svg" alt="логотип Instagram" width="24" height="24">
+                    </a>
+                    <a href="#" class="social__link link__twitter">
+                        <img src="img/icons/icon-facebook.svg" alt="логотип Facebook" width="24" height="24">
+                    </a>
+                </li>
+            </ul>
+            <ul class="worktime__list">
+                <li class="worktime__item">
+                    <p>Mon - Fri <br> 08:00 am - 07:00 pm</p>
+                </li>
+                <li class="worktime__item">
+                    <p>Sat - Sun <br> 10:00 am - 06:00 pm</p>
+                </li>
+            </ul>
+        </div>
+        <div class="credentials">
+            <ul class="credentials__list">
+                <li class="credentials__link">
+                    2023
+                </li>
+                <li class="credentials__link">
+                    <a href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
+                </li>
+                <li class="credentials__link">
+                    <a href="https://github.com/eMiKkKk">eMiKkKk</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
